@@ -21,8 +21,8 @@ export   class options_proyect
 }
 document.addEventListener('DOMContentLoaded', function() {
     var currentPage = window.location.href;
-    console.log(currentPage);                                                                                                                                                                                                http://127.0.0.1:5500/index.html
-    if (/*currentPage === 'http://localhost/' || currentPage === 'http://localhost/index.html' ||*/ currentPage == 'https://exe96.github.io/UX-UI/' || currentPage == 'https://exe96.github.io/UX-UI/index.html' || currentPage == '127.0.0.1:5500') {
+    console.log(currentPage);                                            https://exe96.github.io/UX-UI/                                                                                                                                                    http://127.0.0.1:5500/index.html
+    if (currentPage == 'https://exe96.github.io/UX-UI/' || currentPage == 'https://exe96.github.io/UX-UI/index.html' || currentPage == '127.0.0.1:5500') {
         // Código específico para la página index.php
         const aikido_action=new options_proyect();
         aikido_action.listener(".akido-action","about.html");
