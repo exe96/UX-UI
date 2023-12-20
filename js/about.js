@@ -1,4 +1,12 @@
-import {button_event} from "./tools.js";
+export class button_event{
+    create(item,path){
+        document.querySelector(item).addEventListener('click', function(){
+            window.open(path, '_blank');
+          
+        })
+    }
+}
+
 const pdf=new button_event();
 document.addEventListener('DOMContentLoaded', function() {
     function intercambiarPosicion(elemento1, elemento2) {
