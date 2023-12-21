@@ -26,30 +26,30 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.about-p').textContent=p_aikido;
    
     const picture= document.querySelector('.picture-fill');
-    picture.style.backgroundImage = "url('../origin/thao.jpg')";
+    picture.style.backgroundImage = "url('./origin/thao.jpg')";
     picture.style.backgroundSize = "cover";
     picture.style.backgroundPosition = "center";
-    pdf.create('.about-button',"../pdf/entrega_final-1.pdf");
+    pdf.create('.about-button',"./pdf/entrega_final-1.pdf");
 }else if (sessionStorage.getItem("info")=='.cook-action') {
     const title_cook='Aplicación web para visualizar tutoriales de cocina';
     const p_cook='A continuación  se  podrá ver un pdf que corresponde al caso  practico donde se ven partes del desarrollo de diseño de la aplicación web .'
     document.querySelector('h2').textContent=title_cook;
     document.querySelector('.about-p').textContent=p_cook;
     const picture= document.querySelector('.picture-fill');
-    picture.style.backgroundImage = "url('../origin/cook.jpg')";
+    picture.style.backgroundImage = "url('./origin/cook.jpg')";
     picture.style.backgroundSize = "cover";
     picture.style.backgroundPosition = "center";
-    pdf.create('.about-button',"../pdf/portfolio-2.pdf");
+    pdf.create('.about-button',"./pdf/portfolio-2.pdf");
 }else if(sessionStorage.getItem("info")=='.read-action') {
     const title_read='Aplicación multiplataforma para aprender a leer por primera vez';
     const p_read='A continuación  se  podrá ver un pdf que corresponde al caso  practico donde se ven partes del desarrollo de diseño de la aplicación.'
     document.querySelector('h2').textContent=title_read;
     document.querySelector('.about-p').textContent=p_read;
     const picture= document.querySelector('.picture-fill');
-    picture.style.backgroundImage = "url('../origin/read.jpg')";
+    picture.style.backgroundImage = "url('./origin/read.jpg')";
     picture.style.backgroundSize = "cover";
     picture.style.backgroundPosition = "center";
-    pdf.create('.about-button',"../pdf/caso-practico-3.pdf");
+    pdf.create('.about-button',"./pdf/caso-practico-3.pdf");
 }else if (sessionStorage.getItem("info")=='.desk-action') {
     //joven-charlando
     const title_desk='Aplicación de escritorio para mensajeria';
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.about-p').textContent=p_desk;
     document.querySelector('.about-button').textContent=b_desk;
     const picture= document.querySelector('.picture-fill');
-    picture.style.backgroundImage = "url('../origin/joven-charlando.jpg')";
+    picture.style.backgroundImage = "url('./origin/joven-charlando.jpg')";
     picture.style.backgroundSize = "cover";
     picture.style.backgroundPosition = "center";
 }else if(sessionStorage.getItem("info")=='.i'){
@@ -73,10 +73,10 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('h2').textContent=title_i;
     document.querySelector('.about-p').textContent=p_i;
     const picture= document.querySelector('.picture-fill');
-    picture.style.backgroundImage = "url('../origin/person.png')";
+    picture.style.backgroundImage = "url('./origin/person.png')";
     picture.style.backgroundSize = "cover";
     picture.style.backgroundPosition = "center";
-    pdf.create('.about-button',"../pdf/Exequiel Acosta Currículum Vitae.pdf");
+    pdf.create('.about-button',"./pdf/Exequiel Acosta Currículum Vitae.pdf");
 }else{
     console.log("Tuvimos un problema en about")
 }
