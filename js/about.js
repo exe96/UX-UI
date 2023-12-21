@@ -26,10 +26,10 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.about-p').textContent=p_aikido;
    
     const picture= document.querySelector('.picture-fill');
-    picture.style.backgroundImage = "url('./origin/thao.jpg')";
+    picture.style.backgroundImage = "url('https://exe96.github.io/UX-UI/origin/thao.jpg')";
     picture.style.backgroundSize = "cover";
     picture.style.backgroundPosition = "center";
-    pdf.create('.about-button',"./pdf/entrega_final-1.pdf");
+    pdf.create('.about-button',"https://exe96.github.io/UX-UI/pdf/entrega_final-1.pdf");
 }else if (sessionStorage.getItem("info")=='.cook-action') {
     const title_cook='Aplicación web para visualizar tutoriales de cocina';
     const p_cook='A continuación  se  podrá ver un pdf que corresponde al caso  practico donde se ven partes del desarrollo de diseño de la aplicación web .'
