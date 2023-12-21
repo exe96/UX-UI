@@ -1,4 +1,4 @@
-export class button_event{
+class button_event{
     create(item,path){
         document.querySelector(item).addEventListener('click', function(){
             window.open(path, '_blank');

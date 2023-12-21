@@ -3,7 +3,7 @@
  * @listener el segundo elemento es la pagina donde va, simpre empieza desde la actual 
  * 
 */
-export   class options_proyect
+class options_proyect
 {
     listener(item,page){
     
